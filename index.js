@@ -89,26 +89,7 @@ function distanceTravelledInFeet(start, destination){
     return Math.abs(destination - start)*264  
 }
 console.log(distanceTravelledInFeet(43, 48))
-/* 
-function calculatesFarePrice(start, destination){
-    const distance = Math.abs(destination - start)*264
-    if(start < 400){
-        return 0;
-    }
-    else if( start > 400 && destination < 2000){
-        const fare = (2000 - 400) * 0.02;
-        return fare.toFixed(2);
-    }
-    else if( distance < 2500){
-        return '25';
-    }
-    else{
-        return  'cannot travel that far';
-    }
-}
-console.log(calculatesFarePrice())
-  
-   */
+
 
 function calculatesFarePrice(start, destination) {
     const distance = distanceTravelledInFeet(start, destination);
